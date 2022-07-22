@@ -121,3 +121,15 @@
 		});
 
 })(jQuery);
+
+function getFetch(){
+	const url = 'http://placekitten.com/200/200'
+	fetch(url)
+		.then(data => {
+		  console.log(data)
+		})
+		.catch(err => {
+			console.log(`error ${err}`)
+		});
+  }
+  getFetch()
